@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaxy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q9u-Jz-cRx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="620"/>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SzY-zg-6xp">
+                                <rect key="frame" x="20" y="20" width="560" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="7nY-gq-2kU"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59z-YQ-SvO">
+                                <rect key="frame" x="150" y="500" width="300" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.67543103448275865" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Zgw-Ho-Eqa"/>
+                                    <constraint firstAttribute="width" constant="300" id="nEk-Z2-EZx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Detect Current Location">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q5E-yT-mll">
+                                <rect key="frame" x="178" y="352" width="260" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2c-xD-dJe">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.51726831896551728" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="8sg-Na-uKU"/>
+                                            <constraint firstAttribute="height" constant="40" id="cQf-Jf-svM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4X-VM-Uj3">
+                                        <rect key="frame" x="130" y="0.0" width="130" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.51726831896551728" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="v9V-Wu-2Kq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="e2c-xD-dJe" firstAttribute="width" secondItem="M4X-VM-Uj3" secondAttribute="width" id="8cP-RB-RPq"/>
+                                    <constraint firstItem="e2c-xD-dJe" firstAttribute="width" secondItem="M4X-VM-Uj3" secondAttribute="width" id="NoU-dX-oNw"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8cP-RB-RPq"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nud-fV-GDf">
+                                <rect key="frame" x="150" y="428" width="300" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsC-Ub-Z6w">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.51726831900000003" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Wam-z2-iD0"/>
+                                            <constraint firstAttribute="height" constant="40" id="Z0a-tC-src"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xd7-7t-2Ec">
+                                        <rect key="frame" x="150" y="0.0" width="150" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.51726831900000003" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="BTj-eF-ejl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dsC-Ub-Z6w" firstAttribute="width" secondItem="Xd7-7t-2Ec" secondAttribute="width" id="9nb-PI-dap"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q5E-yT-mll" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6oR-pp-goI"/>
+                            <constraint firstItem="SzY-zg-6xp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CAP-u8-9kX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q9u-Jz-cRx" secondAttribute="bottom" constant="-20" id="Les-lw-MI3"/>
+                            <constraint firstItem="59z-YQ-SvO" firstAttribute="top" secondItem="dsC-Ub-Z6w" secondAttribute="bottom" constant="32" id="Nzl-km-T2t"/>
+                            <constraint firstItem="Q9u-Jz-cRx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="VZ3-vr-Swo"/>
+                            <constraint firstItem="q5E-yT-mll" firstAttribute="top" secondItem="SzY-zg-6xp" secondAttribute="bottom" constant="32" id="bdt-0s-peB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SzY-zg-6xp" secondAttribute="trailing" id="ktA-zL-fTy"/>
+                            <constraint firstItem="nud-fV-GDf" firstAttribute="top" secondItem="e2c-xD-dJe" secondAttribute="bottom" constant="36" id="lRK-EQ-Grf"/>
+                            <constraint firstItem="nud-fV-GDf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rx9-Hr-IKp"/>
+                            <constraint firstItem="59z-YQ-SvO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t5Q-ou-6Ki"/>
+                            <constraint firstItem="SzY-zg-6xp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="u6q-dB-Z2M"/>
+                            <constraint firstItem="Q9u-Jz-cRx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="vzs-Lw-0pU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q9u-Jz-cRx" secondAttribute="trailing" constant="-20" id="xaR-qy-KVe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getLocationButton" destination="59z-YQ-SvO" id="3pW-x1-mX9"/>
+                        <outlet property="labelLatitude" destination="M4X-VM-Uj3" id="Zcj-pc-79n"/>
+                        <outlet property="labelLongitude" destination="Xd7-7t-2Ec" id="qoE-JJ-yoU"/>
+                        <outlet property="myMapView" destination="SzY-zg-6xp" id="d2Y-Ul-D7D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="314"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="galaxy.png" width="262" height="463"/>
+    </resources>
+</document>
