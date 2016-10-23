@@ -21,7 +21,9 @@
 
 
 @property (weak, nonatomic) IBOutlet UILabel *labelLongitude;
-@property (weak, nonatomic) IBOutlet UIButton *getLocationButton;
+
+
+- (IBAction)getLocationbutton:(id)sender;
 
 @end
 

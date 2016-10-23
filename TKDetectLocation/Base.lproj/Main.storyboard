@@ -38,6 +38,9 @@
                                 <state key="normal" title="Detect Current Location">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="getLocationbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mNq-27-dpM"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q5E-yT-mll">
                                 <rect key="frame" x="178" y="352" width="260" height="40"/>
@@ -122,7 +125,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="getLocationButton" destination="59z-YQ-SvO" id="3pW-x1-mX9"/>
                         <outlet property="labelLatitude" destination="M4X-VM-Uj3" id="Zcj-pc-79n"/>
                         <outlet property="labelLongitude" destination="Xd7-7t-2Ec" id="qoE-JJ-yoU"/>
                         <outlet property="myMapView" destination="SzY-zg-6xp" id="d2Y-Ul-D7D"/>
